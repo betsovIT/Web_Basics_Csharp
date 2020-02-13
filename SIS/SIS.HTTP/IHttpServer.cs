@@ -1,12 +1,12 @@
-﻿using System;
+﻿using System.Threading.Tasks;
 
 namespace SIS.HTTP
 {
     public interface IHttpServer
     {
-        void Start();
+        Task StartAsync();
 
-        void Reset();
+        Task ResetAsync();
 
         void Stop();
     }
